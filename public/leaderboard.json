@@ -4,27 +4,31 @@
   "results": [
     {
       "teamId": 1,
-      "teamName": "Team Alpha",
-      "lap1": 42.35,
-      "lap2": 38.62,
-      "penaltyTime": 10,
-      "totalTime": 80.97
+      "teamName": "Aam Admi Part",
+      "lap1": 317,
+      "lap2": 396,
+      "penaltyTime": 39
     },
     {
       "teamId": 2,
-      "teamName": "Team Beta",
-      "lap1": 45.12,
-      "lap2": 39.48,
-      "penaltyTime": 0,
-      "totalTime": 84.60
+      "teamName": "White Monster",
+      "lap1": 129,
+      "lap2": 116,
+      "penaltyTime": 21
     },
     {
       "teamId": 3,
-      "teamName": "Team Gamma",
-      "lap1": 40.50,
-      "lap2": 41.20,
-      "penaltyTime": 0,
-      "totalTime": 81.70
+      "teamName": "torQ",
+      "lap1": 124,
+      "lap2": 171,
+      "penaltyTime": 21
+    },
+    {
+      "teamId": 4,
+      "teamName": "ardidechtech",
+      "lap1": 509,
+      "lap2": 381,
+      "penaltyTime": 64
     }
   ]
 }
