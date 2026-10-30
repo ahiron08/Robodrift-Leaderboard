@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Header from './components/Header';
 import Leaderboard from './components/Leaderboard';
+import Schedule from './components/Schedule';
 import Footer from './components/Footer';
 import { sortLeaderboard, assignPositions } from './utils/leaderboardUtils';
 import './styles.css';
@@ -54,7 +55,13 @@ export default function App() {
         {error && <div className="status error">Error: {error}</div>}
 
         {!loading && !error && (
+           <>
+
           <Leaderboard completed={completed} incomplete={incomplete} />
+              <Schedule />
+
+           </>
+
         )}
 
         <div className="status-bar">

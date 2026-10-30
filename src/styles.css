@@ -63,10 +63,12 @@ header, main, footer { position: relative; z-index: 2; }
 .col-time { font-variant-numeric: tabular-nums; }
 .col-total { font-weight: 700; color: var(--soft-lav); font-size: 18px; }
 
-.row-first { background: rgba(196,167,255,0.12); }
-.row-first .col-pos { color: var(--lavender); font-size: 20px; }
-.row-second .col-pos { color: var(--soft-lav); }
-.row-third .col-pos { color: #d4c4ff; }
+.row-first { background: rgba(36,26,56,0.4); }
+.row-first .col-pos { color: #FFD700; }
+.row-second { background: rgba(36,26,56,0.4); }
+.row-second .col-pos { color: #C0C0C0; }
+.row-third { background: rgba(36,26,56,0.4); }
+.row-third .col-pos { color: #CD7F32; }
 
 .mobile-card { display: none; }
 

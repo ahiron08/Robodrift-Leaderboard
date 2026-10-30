@@ -85,6 +85,27 @@
       "lap1": 312,
       "lap2": 144,
       "penaltyTime": 23
+    },
+    {
+      "teamId": 13,
+      "teamName": "Mad Scientists",
+      "lap1": 259,
+      "lap2": 282,
+      "penaltyTime": 53
+    },
+    {
+      "teamId": 14,
+      "teamName": "Drift Syndicates",
+      "lap1": 342,
+      "lap2": 264,
+      "penaltyTime": 34
+    },
+    {
+      "teamId": 15,
+      "teamName": "Astranova",
+      "lap1": 338,
+      "lap2": 499,
+      "penaltyTime": 91
     }
   ]
 }

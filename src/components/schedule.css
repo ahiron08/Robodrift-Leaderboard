@@ -1,0 +1,34 @@
+.schedule-panel {
+  margin-top: 24px;
+  background: rgba(36,26,56,0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(196,167,255,0.25);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 24px rgba(165,107,255,0.15);
+}
+.schedule-heading { text-align: center; margin-bottom: 16px; }
+.schedule-heading h2 { color: var(--lavender); letter-spacing: 4px; font-size: 14px; margin: 0; }
+.schedule-heading h3 { color: var(--soft-lav); font-size: 26px; margin: 8px 0; text-shadow: 0 0 12px var(--neon); }
+.schedule-subtitle { color: var(--lavender); letter-spacing: 2px; font-size: 13px; }
+.schedule-date { color: #b9a8d9; font-size: 13px; margin-top: 4px; }
+.info-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+.info-card { background: rgba(196,167,255,0.08); border: 1px solid rgba(196,167,255,0.25); border-radius: 10px; padding: 10px; text-align: center; font-size: 11px; letter-spacing: 1px; color: var(--soft-lav); }
+.schedule-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.schedule-table th, .schedule-table td { padding: 10px 12px; text-align: left; border: 1px solid rgba(196,167,255,0.15); }
+.schedule-table th { color: var(--lavender); font-size: 13px; letter-spacing: 1px; background: rgba(196,167,255,0.08); }
+.schedule-table tbody tr.even { background: rgba(36,26,56,0.4); }
+.schedule-table tbody tr.odd { background: rgba(196,167,255,0.04); }
+.schedule-table tbody tr:hover { background: rgba(196,167,255,0.12); transition: background 0.2s; }
+.slot-num { font-weight: 700; color: var(--neon); }
+.slot-team { font-weight: 600; color: var(--text); }
+.schedule-note { margin-top: 14px; color: #b9a8d9; font-size: 13px; font-style: italic; }
+.pdf-actions { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+.pdf-btn { background: transparent; border: 1px solid var(--lavender); color: var(--lavender); padding: 8px 16px; border-radius: 8px; text-decoration: none; transition: all 0.2s; }
+.pdf-btn:hover { background: var(--lavender); color: var(--bg); }
+.pdf-viewer { margin-top: 14px; }
+.pdf-viewer iframe { width: 100%; height: 500px; border: 1px solid rgba(196,167,255,0.2); border-radius: 10px; }
+@media (max-width: 768px) {
+  .info-cards { grid-template-columns: repeat(2, 1fr); }
+  .pdf-viewer iframe { height: 300px; }
+}
