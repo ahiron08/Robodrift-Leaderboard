@@ -8,7 +8,7 @@ export default function LeaderboardRow({ team }) {
   const pos = team.position;
   const rowClass = `row ${pos === 1 ? 'row-first' : pos === 2 ? 'row-second' : pos === 3 ? 'row-third' : ''}`;
   const hasBreakdown = Array.isArray(team.penalties) && team.penalties.length > 0;
-  const penaltyLabel = `+${penalty.toFixed(2)}s`;
+  const penaltyLabel = `+${formatTime(penalty)}`;
 
   return (
     <>
