@@ -4,7 +4,7 @@
   "results": [
     {
       "teamId": 1,
-      "teamName": "Aam Admi Part",
+      "teamName": "Aam Admi Party",
       "lap1": 317,
       "lap2": 396,
       "penaltyTime": 39
@@ -25,10 +25,46 @@
     },
     {
       "teamId": 4,
-      "teamName": "ardidechtech",
+      "teamName": "Arditechs",
       "lap1": 509,
       "lap2": 381,
       "penaltyTime": 64
+    },
+    {
+      "teamId": 5,
+      "teamName": "Red Hare Bots",
+      "lap1": 143,
+      "lap2": 99,
+      "penaltyTime": 43
+    },
+    {
+      "teamId": 6,
+      "teamName": "Rare Drift",
+      "lap1": 230,
+      "lap2": 254,
+      "penaltyTime": 25
+    },
+    {
+      "teamId": 7,
+      "teamName": "Edgerunners",
+      "lap1": 230,
+      "lap2": 319,
+      "penaltyTime": 33
+    },
+    {
+      "teamId": 8,
+      "teamName": "Driftsaur",
+      "lap1": 195,
+      "lap2": 188,
+      "penaltyTime": 38
+    },
+    {
+      "teamId": 9,
+      "teamName": "Udaan",
+      "lap1": null,
+      "lap2": null,
+      "totalTime": 470,
+      "penaltyTime": 0
     }
   ]
 }
