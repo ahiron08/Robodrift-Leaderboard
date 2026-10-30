@@ -19,7 +19,7 @@ export default function App() {
   const fetchData = useCallback(async (manual = false) => {
     if (manual) setRefreshing(true);
     try {
-      const res = await fetch('/leaderboard.json', { cache: 'no-store' });
+      const res = await fetch(`${import.meta.env.BASE_URL}leaderboard.json`, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       if (!json || !Array.isArray(json.results)) throw new Error('Invalid JSON structure');

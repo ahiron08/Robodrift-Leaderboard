@@ -9,9 +9,10 @@ export default function Leaderboard({ completed, incomplete }) {
           <tr>
             <th>Position</th>
             <th>Team Name</th>
-            <th>Lap 1 Time</th>
-            <th>Lap 2 Time</th>
-            <th>Total Time</th>
+            <th>Lap 1</th>
+            <th>Lap 2</th>
+            <th>Penalty</th>
+            <th>Final Time</th>
           </tr>
         </thead>
         <tbody>
@@ -29,9 +30,10 @@ export default function Leaderboard({ completed, incomplete }) {
               <tr>
                 <th>Position</th>
                 <th>Team Name</th>
-                <th>Lap 1 Time</th>
-                <th>Lap 2 Time</th>
-                <th>Total Time</th>
+                <th>Lap 1</th>
+                <th>Lap 2</th>
+                <th>Penalty</th>
+                <th>Final Time</th>
               </tr>
             </thead>
             <tbody>

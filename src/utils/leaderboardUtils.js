@@ -14,7 +14,18 @@ export function toNumber(value) {
   return n;
 }
 
-export function computeTotal(team) {
+export function computePenalty(team) {
+  if (Array.isArray(team?.penalties) && team.penalties.length > 0) {
+    return team.penalties.reduce((sum, p) => {
+      const t = toNumber(p?.time);
+      return sum + (t !== null ? t : 0);
+    }, 0);
+  }
+  const pt = toNumber(team?.penaltyTime);
+  return pt !== null ? pt : 0;
+}
+
+export function computeRawTotal(team) {
   if (team.totalTime !== undefined && team.totalTime !== null && team.totalTime !== '') {
     const t = toNumber(team.totalTime);
     if (t !== null) return t;
@@ -25,10 +36,20 @@ export function computeTotal(team) {
   return null;
 }
 
+export function computeFinalTime(team) {
+  const raw = computeRawTotal(team);
+  if (raw === null) return null;
+  return raw + computePenalty(team);
+}
+
+export function computeTotal(team) {
+  return computeFinalTime(team);
+}
+
 export function isComplete(team) {
   const l1 = toNumber(team.lap1);
   const l2 = toNumber(team.lap2);
-  const total = computeTotal(team);
+  const total = computeRawTotal(team);
   return l1 !== null && l2 !== null && total !== null;
 }
 
