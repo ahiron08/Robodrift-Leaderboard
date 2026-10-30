@@ -59,12 +59,32 @@
       "penaltyTime": 38
     },
     {
+      "teamId": 10,
+      "teamName": "Quantum Drift",
+      "lap1": 642,
+      "lap2": 398,
+      "penaltyTime": 74
+    },
+    {
+      "teamId": 11,
+      "teamName": "Airavat",
+      "lap1": 81,
+      "lap2": 69,
+      "penaltyTime": 5
+    },
+    {
+      "teamId": 12,
+      "teamName": "Stellar Robotics",
+      "lap1": 155,
+      "lap2": 361,
+      "penaltyTime": 82
+    },
+    {
       "teamId": 9,
       "teamName": "Udaan",
-      "lap1": null,
-      "lap2": null,
-      "totalTime": 470,
-      "penaltyTime": 0
+      "lap1": 312,
+      "lap2": 144,
+      "penaltyTime": 23
     }
   ]
 }
