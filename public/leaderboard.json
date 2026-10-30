@@ -1,0 +1,27 @@
+{
+  "event": "ROBOTRON 2026",
+  "competition": "ROBODRIFT",
+  "results": [
+    {
+      "teamId": 1,
+      "teamName": "Team Alpha",
+      "lap1": 42.35,
+      "lap2": 38.62,
+      "totalTime": 80.97
+    },
+    {
+      "teamId": 2,
+      "teamName": "Team Beta",
+      "lap1": 45.12,
+      "lap2": 39.48,
+      "totalTime": 84.60
+    },
+    {
+      "teamId": 3,
+      "teamName": "Team Gamma",
+      "lap1": 40.50,
+      "lap2": 41.20,
+      "totalTime": 81.70
+    }
+  ]
+}
