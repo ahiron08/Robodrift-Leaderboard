@@ -59,6 +59,13 @@
       "penaltyTime": 38
     },
     {
+      "teamId": 9,
+      "teamName": "Udaan",
+      "lap1": 312,
+      "lap2": 144,
+      "penaltyTime": 23
+    },
+    {
       "teamId": 10,
       "teamName": "Quantum Drift",
       "lap1": 642,
@@ -80,13 +87,6 @@
       "penaltyTime": 82
     },
     {
-      "teamId": 9,
-      "teamName": "Udaan",
-      "lap1": 312,
-      "lap2": 144,
-      "penaltyTime": 23
-    },
-    {
       "teamId": 13,
       "teamName": "Mad Scientists",
       "lap1": 259,
@@ -106,6 +106,55 @@
       "lap1": 338,
       "lap2": 499,
       "penaltyTime": 91
+    },
+    {
+      "teamId": 21,
+      "teamName": "Steel troops",
+      "lap1": 142,
+      "lap2": 172,
+      "penaltyTime": 10
+    },
+    {
+      "teamId": 22,
+      "teamName": "Robonix",
+      "lap1": 229,
+      "lap2": 170,
+      "penaltyTime": 52
+    },
+    {
+      "teamId": 23,
+      "teamName": "Smartpahls",
+      "lap1": 238,
+      "lap2": 182,
+      "penaltyTime": 50
+    },
+    {
+      "teamId": 24,
+      "teamName": "Geared brothers",
+      "lap1": 263,
+      "lap2": 167,
+      "penaltyTime": 67
+    },
+    {
+      "teamId": 25,
+      "teamName": "Trailblazers",
+      "lap1": 185,
+      "lap2": 157,
+      "penaltyTime": 10
+    },
+    {
+      "teamId": 26,
+      "teamName": "Autobots",
+      "lap1": 564,
+      "lap2": 560,
+      "penaltyTime": 124
+    },
+    {
+      "teamId": 27,
+      "teamName": "Nyx",
+      "lap1": 244,
+      "lap2": 276,
+      "penaltyTime": 63
     }
   ]
 }
