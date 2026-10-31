@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Header from './components/Header';
-import Round2Fixture from './components/Round2Fixture';
 import Leaderboard from './components/Leaderboard';
 import Footer from './components/Footer';
-import { getRound2Qualifiers, sortLeaderboard } from './utils/leaderboardUtils';
+import { getRound2Qualifiers, sortLeaderboard, assignPositions } from './utils/leaderboardUtils';
 import './styles.css';
 
 const POLL_INTERVAL = 3000;
@@ -63,9 +62,8 @@ export default function App() {
         {!loading && !error && (
            <>
 
-          {round2Data && Array.isArray(round2Data.results) && round2Data.results.length > 0 && (() => { const { completed, incomplete } = sortLeaderboard(round2Data.results); return <Leaderboard completed={completed} incomplete={incomplete} />; })()}
+          {round2Data && Array.isArray(round2Data.results) && round2Data.results.length > 0 && (() => { const { completed, incomplete } = sortLeaderboard(round2Data.results); return <Leaderboard completed={assignPositions(completed)} incomplete={incomplete} />; })()}
 
-          <Round2Fixture qualifiers={qualifiers} />
 
            </>
 

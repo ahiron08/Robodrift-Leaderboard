@@ -1,5 +1,90 @@
 {
   "event": "ROBOTRON 2026",
   "competition": "ROBODRIFT ROUND 2",
-  "results": []
+  "results": [
+    {
+      "teamId": 8,
+      "teamName": "Driftosaur",
+      "lap1": 177,
+      "lap2": 184,
+      "penaltyTime": 55
+    },
+    {
+      "teamId": 13,
+      "teamName": "Mad Scientists",
+      "lap1": 215,
+      "lap2": 249,
+      "penaltyTime": 60
+    },
+    {
+      "teamId": 24,
+      "teamName": "Geared Brothers",
+      "lap1": 182,
+      "lap2": 118,
+      "penaltyTime": 35
+    },
+    {
+      "teamId": 11,
+      "teamName": "Airavat",
+      "lap1": 76,
+      "lap2": 83,
+      "penaltyTime": 10
+    },
+    {
+      "teamId": 5,
+      "teamName": "Red Hair Bots",
+      "lap1": 76,
+      "lap2": 83,
+      "penaltyTime": 15
+    },
+    {
+      "teamId": 23,
+      "teamName": "Smartpahls",
+      "lap1": 241,
+      "lap2": 182,
+      "penaltyTime": 35
+    },
+    {
+      "teamId": 9,
+      "teamName": "Udaan",
+      "lap1": 173,
+      "lap2": 129,
+      "penaltyTime": 10
+    },
+    {
+      "teamId": 7,
+      "teamName": "Edgerunners",
+      "lap1": 243,
+      "lap2": 235,
+      "penaltyTime": 60
+    },
+    {
+      "teamId": 6,
+      "teamName": "Rear Drift",
+      "lap1": 147,
+      "lap2": 104,
+      "penaltyTime": 20
+    },
+    {
+      "teamId": 2,
+      "teamName": "White Monster",
+      "lap1": 93,
+      "lap2": 84,
+      "penaltyTime": 0
+    },
+    {
+      "teamId": 3,
+      "teamName": "torQ",
+      "lap1": 115,
+      "lap2": 148,
+      "penaltyTime": 85
+    },
+    {
+      "teamId": 21,
+      "teamName": "Steel troops",
+      "lap1": 102,
+      "lap2": 151,
+      "penaltyTime": 60
+    }
+  ]
 }

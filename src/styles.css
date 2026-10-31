@@ -69,6 +69,7 @@ header, main, footer { position: relative; z-index: 2; }
 .row-second .col-pos { color: #C0C0C0; }
 .row-third { background: rgba(36,26,56,0.4); }
 .row-third .col-pos { color: #CD7F32; }
+.row-top8 { box-shadow: inset 4px 0 0 #a56bff; background: rgba(165,107,255,0.12); }
 
 .mobile-card { display: none; }
 
