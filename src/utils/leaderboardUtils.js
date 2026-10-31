@@ -80,3 +80,53 @@ export function sortLeaderboard(results) {
 export function assignPositions(completed) {
   return completed.map((t, i) => ({ ...t, position: i + 1 }));
 }
+
+export function getRound2Qualifiers(results, limit = 16) {
+  const seen = new Set();
+  const unique = [];
+  (results || []).forEach((t) => {
+    const key = t?.teamId !== undefined && t?.teamId !== null ? `id:${t.teamId}` : `name:${t?.teamName}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    unique.push(t);
+  });
+  const sorted = [...unique].sort((a, b) => {
+    const ta = computeFinalTime(a);
+    const tb = computeFinalTime(b);
+    const va = ta === null ? Infinity : ta;
+    const vb = tb === null ? Infinity : tb;
+    if (va !== vb) return va - vb;
+    return String(a?.teamName ?? '').localeCompare(String(b?.teamName ?? ''));
+  });
+  return sorted.slice(0, limit).map((t, i) => ({
+    ...t,
+    position: i + 1,
+    totalTime: computeFinalTime(t),
+  }));
+}
+
+export function buildRound2Slots(startHour = 17, startMinute = 30, count = 16, durationMinutes = 15) {
+  const slots = [];
+  let totalMinutes = startHour * 60 + startMinute;
+  for (let i = 0; i < count; i++) {
+    const start = totalMinutes;
+    const end = totalMinutes + durationMinutes;
+    slots.push({
+      slot: String(i + 1).padStart(2, '0'),
+      startMinutes: start,
+      endMinutes: end,
+      start: formatClock(start),
+      end: formatClock(end),
+    });
+    totalMinutes = end;
+  }
+  return slots;
+}
+
+function formatClock(mins) {
+  const h24 = Math.floor(mins / 60) % 24;
+  const m = mins % 60;
+  const ampm = h24 >= 12 ? 'PM' : 'AM';
+  const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
+  return `${h12}:${String(m).padStart(2, '0')} ${ampm}`;
+}

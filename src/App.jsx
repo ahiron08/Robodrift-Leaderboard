@@ -1,17 +1,15 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import Header from './components/Header';
-import Leaderboard from './components/Leaderboard';
-import Schedule from './components/Schedule';
+import Round2Fixture from './components/Round2Fixture';
 import Footer from './components/Footer';
-import { sortLeaderboard, assignPositions } from './utils/leaderboardUtils';
+import { getRound2Qualifiers } from './utils/leaderboardUtils';
 import './styles.css';
 
 const POLL_INTERVAL = 3000;
 
 export default function App() {
   const [data, setData] = useState(null);
-  const [completed, setCompleted] = useState([]);
-  const [incomplete, setIncomplete] = useState([]);
+  const [qualifiers, setQualifiers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
@@ -24,9 +22,7 @@ export default function App() {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       if (!json || !Array.isArray(json.results)) throw new Error('Invalid JSON structure');
-      const { completed: c, incomplete: inc } = sortLeaderboard(json.results);
-      setCompleted(assignPositions(c));
-      setIncomplete(inc);
+      setQualifiers(getRound2Qualifiers(json.results, 16));
       setData(json);
       setLastUpdated(new Date());
       setError(null);
@@ -57,8 +53,7 @@ export default function App() {
         {!loading && !error && (
            <>
 
-          <Leaderboard completed={completed} incomplete={incomplete} />
-              <Schedule />
+          <Round2Fixture qualifiers={qualifiers} />
 
            </>
 

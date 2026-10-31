@@ -83,7 +83,29 @@ header, main, footer { position: relative; z-index: 2; }
 .last-updated { color: #b9a8d9; font-size: 13px; }
 .auto-indicator { display: flex; align-items: center; gap: 6px; color: #b9a8d9; font-size: 13px; }
 .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--neon); animation: pulse 1.5s infinite; }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(1.3)} }
+
+.round2-panel {
+  background: rgba(36,26,56,0.55);
+  border: 1px solid rgba(196,167,255,0.25);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 24px rgba(165,107,255,0.15);
+}
+.round2-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.round-badge { border: 1px solid var(--lavender); color: var(--lavender); padding: 4px 10px; border-radius: 8px; font-size: 12px; letter-spacing: 2px; }
+.summary-cards { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.summary-card { border: 1px solid rgba(196,167,255,0.25); border-radius: 10px; padding: 10px 14px; color: var(--soft-lav); font-size: 13px; letter-spacing: 1px; }
+.round2-table { width: 100%; border-collapse: collapse; }
+.round2-table th, .round2-table td { padding: 14px 12px; text-align: left; }
+.round2-table th { color: var(--lavender); font-size: 13px; letter-spacing: 1px; border-bottom: 1px solid rgba(196,167,255,0.2); }
+.round2-table tbody tr { border-bottom: 1px solid rgba(196,167,255,0.08); transition: background 0.2s; }
+.round2-table tbody tr:hover { background: rgba(196,167,255,0.06); }
+.round2-table .first-slot { background: rgba(196,167,255,0.12); }
+.col-id { font-variant-numeric: tabular-nums; }
+.col-slot { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--soft-lav); }
+.pdf-actions { margin-top: 16px; display: flex; justify-content: flex-end; }
+.pdf-btn { background: transparent; border: 1px solid var(--lavender); color: var(--lavender); padding: 8px 16px; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+.pdf-btn:hover { background: var(--lavender); color: var(--bg); }
 
 .refresh-btn { background: transparent; border: 1px solid var(--lavender); color: var(--lavender); padding: 8px 16px; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
 .refresh-btn:hover { background: var(--lavender); color: var(--bg); }
