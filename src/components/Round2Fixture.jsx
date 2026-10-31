@@ -1,5 +1,5 @@
 import React from 'react';
-import { buildRound2Slots } from '../utils/leaderboardUtils';
+import { buildRound2Slots, formatTime } from '../utils/leaderboardUtils';
 
 export default function Round2Fixture({ qualifiers }) {
   const slots = buildRound2Slots(17, 30, 16, 15);
@@ -26,7 +26,7 @@ export default function Round2Fixture({ qualifiers }) {
           <tr>
             <th>Position</th>
             <th>Team Name</th>
-            <th>Team ID</th>
+            <th>Total Time</th>
             <th>Time Slot</th>
           </tr>
         </thead>
@@ -35,7 +35,7 @@ export default function Round2Fixture({ qualifiers }) {
             <tr key={team.teamId ?? team.teamName} className={i === 0 ? 'first-slot' : ''}>
               <td className="col-pos">{team.position}</td>
               <td className="col-team">{team.teamName}</td>
-              <td className="col-id">{team.teamId ?? '--'}</td>
+              <td className="col-id">{formatTime(team.totalTime)}</td>
               <td className="col-slot">{slot.start} – {slot.end}</td>
             </tr>
           ))}
